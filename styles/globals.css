@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  html,
+  body {
+    height: 100%;
+    font-size: 18px;
+  }
+
+  #__next {
+    height: 100%;
+  }
+  p {
+    color: #8bacda;
+  }
+}
