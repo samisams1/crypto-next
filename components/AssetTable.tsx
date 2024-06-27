@@ -15,9 +15,9 @@ const AssetTable: React.FC<AssetTableProps> = ({ assets }) => {
           <tr className="text-[#FFFFFF] border-b border-[#4F4F4F]">
             <th className="py-4 px-6 text-left md:text-center">ASSETS</th>
             <th className="py-4 px-6 text-left md:text-center">LAST TRADE</th>
-            <th className="py-4 px-6 text-right md:text-center">24H %</th>
+            <th className="py-4 px-6 text-right md:text-center">24H </th>
             <th className="py-4 px-6 text-right md:text-center">24H CHANGE</th>
-            <th className="py-4 px-6 text-right md:text-center" style={{ color: '#3980FF' }}>MORE > </th>
+            <th className="py-4 px-6 text-right md:text-center" style={{ color: '#3980FF' }}>MORE  </th>
           </tr>
         </thead>
         <tbody>
