@@ -21,7 +21,7 @@ const AssetBottom: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-center mt-4">
-        <button className="text-[#FFFFFF] bg-[red] px-6 py-2 rounded-tl-md rounded-br-md border border-[#9945FF] font-medium">
+        <button className="text-[#FFFFFF] bg-[#9945FF] px-6 py-2 rounded-tl-md rounded-br-md border border-[#9945FF] font-medium">
           SWOP TOKENS
         </button>
       </div>
