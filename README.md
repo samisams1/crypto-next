@@ -20,3 +20,11 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+
+Deployment
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
+
+Check out the Next.js deployment documentation for more details.
+
+Live Demo
+You can access the live demo of the Crypto Next App at https://crypto-next-mkm6.vercel.app/.```
