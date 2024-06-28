@@ -7,7 +7,12 @@ const AssetBottom: React.FC = () => {
     <div className="mt-8 overflow-x-auto border border-[#4F4F4F] rounded-[10px] px-6 py-4 bg-black">
       <div className="flex items-center justify-between text-[#FAFAFA]">
         <span>SWAP TOKENS</span>
-        <span className="text-[#666666]">setting icon</span>
+        <span className="text-[#666666]"> <Image
+        src={`/assets/layout/setting.png`}
+        alt="image"
+        width={19}
+        height={28}
+      /></span>
       </div>
       <div className="flex items-center justify-between text-[#FAFAFA] mt-4 space-x-2">
   <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
