@@ -5,13 +5,13 @@ const AppBar: React.FC = () => {
   return (
     <header className="mb-8">
       <nav className="flex justify-between items-center py-4">
-        <div className="flex justify-center w-1/4">
-          <Link href="/">
-            <span className="text-[#FFFFFF] shadow-2xl font-extrabold" style={{ fontSize: '20.8px', height: '14px', top: '5.99px', left: '41.03px', gap: '0px', opacity: '1', fontWeight: '900', textShadow: '0 0 20px rgba(255, 255, 255, 0.5)' }}>
-              BLOCKCHAIN
-            </span>
-          </Link>
-        </div>
+      <div className="flex justify-center w-1/4">
+  <Link href="/">
+    <span className="text-[#FFFFFF] font-black shadow-2xl shadow-white" style={{ fontSize: '24px', height: 'auto', top: '5.99px', left: '41.03px', gap: '0px', opacity: '1', fontWeight: '900', textShadow: '0 0 20px rgba(255, 255, 255, 0.5)' }}>
+      BLOCKCHAIN
+    </span>
+  </Link>
+</div>
         <div className="flex justify-center w-1/2 space-x-8">
           <Link href="/exchange">
             <span className="text-[#FFFFFF] py-4" style={{ marginLeft: '20px' }}>
