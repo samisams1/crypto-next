@@ -21,4 +21,4 @@ yarn dev
 # or
 pnpm dev
 ```
-[Crypto Next App Live Demo](https://crypto-next-mkm6.vercel.app)
+[Crypto Live Demo](https://crypto-next-mkm6.vercel.app)
