@@ -1,5 +1,6 @@
 import React from 'react';
 import { Asset } from '../pages/api/assets';
+import Image from 'next/image';
 
 const AssetBottom: React.FC = () => {
   return (
@@ -8,25 +9,52 @@ const AssetBottom: React.FC = () => {
         <span>SWAP TOKENS</span>
         <span className="text-[#666666]">setting icon</span>
       </div>
-      <div className="flex items-center justify-between text-[#FAFAFA] mt-4">
-        <div className="bg-[#1E1E1E] border border-[#4F4F4F] px-4 py-2">
-          <span className="text-[50px] font-[600] font-['Roboto'] mr-[380px]">0.00</span>
-          <span className="text-[#666666]">BNB</span>
-          <span className="text-[#666666]">&gt;</span>
-        </div>
-        <div className="bg-[#1E1E1E] border border-[#4F4F4F] px-4 py-2 mr-4">
-          <span className="text-[50px] font-[600] font-['Roboto'] mr-[400px]">0.00</span>
-          <span className="text-[#666666]">BNB</span>
-          <span className="text-[#666666]">&gt;</span>
-        </div>
-      </div>
+      <div className="flex items-center justify-between text-[#FAFAFA] mt-4 space-x-2">
+  <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
+    <div className="flex items-center">
+      <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
+    </div>
+    <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
+      width: '122px',
+      height: '48px',
+      opacity: '1',
+    }}>
+      <Image
+        src={`/assets/layout/phCurrency.png`}
+        alt="image"
+        width={19}
+        height={28}
+      />
+      <span className="ml-2">BTC &gt;</span>
+    </span>
+  </div>
+ 
+  <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
+  <div className="flex items-center">
+      <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
+    </div>
+    <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
+      width: '122px',
+      height: '48px',
+      opacity: '1',
+    }}>
+      <Image
+        src={`/assets/layout/bnb.png`}
+        alt="image"
+        width={19}
+        height={28}
+      />
+      <span className="ml-2">BNB &gt;</span>
+    </span>
+  </div>
+</div>
       <div className="flex justify-center mt-4">
         <button className="text-[#FFFFFF] bg-[#9945FF] px-6 py-2 rounded-tl-md rounded-br-md border border-[#9945FF] font-medium">
           SWOP TOKENS
         </button>
       </div>
       <div className="flex items-center justify-between mt-4">
-        <span style={{ color: '#FAFAFA' }}>1 BTC = 32.4039 ETH <p style={{ color: '#3980FF' }}>Free exchange</p></span>
+        <span style={{ color: '#FAFAFA' }}>1  BTC = 32.4039 ETH <p style={{ color: '#3980FF' }}>Free exchange</p></span>
         <span style={{ color: '#666666' }}>Updates in 4s</span>
       </div>
     </div>

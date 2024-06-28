@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
-      <main className="bg-black flex items-center justify-center p-5">
+      <main className="bg-[#0D192B] flex items-center justify-center p-5" style={{backgroundColor:'black'}}>
         <div className="relative w-full h-full">
           <Image
             src={backgroundImage}
@@ -57,9 +57,8 @@ const Home: NextPage = () => {
             layout="fill"
             objectFit="cover"
             className="z-0"
-            style={{ zIndex: -1 }}
           />
-          <Layout>
+          <Layout >
             <div className="relative z-10 w-full max-w-[1200px] mx-auto bg-black" style={{ width: `min(1200px, ${windowWidth - 40}px)` }}>
               <AssetTable assets={assets} />
               <AssetBottom />
