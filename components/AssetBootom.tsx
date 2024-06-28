@@ -19,6 +19,7 @@ const AssetBottom: React.FC = () => {
     <div className="flex items-center">
       <span className="text-[50px] font-[600] font-['Roboto']">0.00<p style={{fontSize:15,color:'#666666'}}>$0.00</p></span>
     </div>
+    <span> 
     <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
       width: '122px',
       height: '48px',
@@ -31,7 +32,7 @@ const AssetBottom: React.FC = () => {
         height={28}
       />
       <span className="ml-2">BTC &gt;</span>
-    </span>
+    </span><p style={{fontSize:15,color:'#666666',paddingLeft:20,paddingTop:30}}><span style={{color:'#FFFFFF'}}>Balance:</span><span style={{color:'#3980FF'}}> 24,240</span ></p></span>
   </div>
 
   <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
@@ -47,6 +48,7 @@ const AssetBottom: React.FC = () => {
     <div className="flex items-center">
       <span className="text-[50px] font-[600] font-['Roboto']">0.00<p style={{fontSize:15,color:'#666666'}}>$0.00</p></span>
     </div>
+    <span> 
     <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
       width: '122px',
       height: '48px',
@@ -59,7 +61,7 @@ const AssetBottom: React.FC = () => {
         height={28}
       />
       <span className="ml-2">BNB &gt;</span>
-    </span>
+    </span><p style={{fontSize:15,color:'#666666',paddingLeft:20,paddingTop:30}}><span style={{color:'#FFFFFF'}}>Balance:</span><span style={{color:'#3980FF'}}> 63,790</span ></p></span>
   </div>
 </div>
       <div className="flex justify-center mt-4">
