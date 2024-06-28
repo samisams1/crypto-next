@@ -15,9 +15,9 @@ const AssetBottom: React.FC = () => {
       /></span>
       </div>
       <div className="flex items-center justify-between text-[#FAFAFA] mt-4 space-x-2 relative">
-  <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
+  <div className="bg-[#1E1E1E] px-4 py-2 flex items-center justify-between w-1/2">
     <div className="flex items-center">
-      <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
+      <span className="text-[50px] font-[600] font-['Roboto']">0.00<p style={{fontSize:15,color:'#666666'}}>$0.00</p></span>
     </div>
     <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
       width: '122px',
@@ -43,9 +43,9 @@ const AssetBottom: React.FC = () => {
     />
   </div>
 
-  <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
+  <div className="bg-[#1E1E1E] px-4 py-2 flex items-center justify-between w-1/2">
     <div className="flex items-center">
-      <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
+      <span className="text-[50px] font-[600] font-['Roboto']">0.00<p style={{fontSize:15,color:'#666666'}}>$0.00</p></span>
     </div>
     <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
       width: '122px',
