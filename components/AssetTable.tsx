@@ -15,9 +15,9 @@ const AssetTable: React.FC<AssetTableProps> = ({ assets }) => {
           <tr className="text-[#FFFFFF] border-b border-[#4F4F4F]">
             <th className="py-4 px-6 text-left md:text-center">ASSETS</th>
             <th className="py-4 px-6 text-left md:text-center">LAST TRADE</th>
-            <th className="py-4 px-6 text-right md:text-center">24H </th>
+            <th className="py-4 px-6 text-right md:text-center">24H%</th>
             <th className="py-4 px-6 text-right md:text-center">24H CHANGE</th>
-            <th className="py-4 px-6 text-right md:text-center" style={{ color: '#3980FF' }}>MORE  </th>
+            <th className="py-4 px-6 text-right md:text-center" style={{ color: '#3980FF' }}>MORE &gt;</th>
           </tr>
         </thead>
         <tbody>
@@ -36,8 +36,13 @@ const AssetTable: React.FC<AssetTableProps> = ({ assets }) => {
                 {asset.assets}<span style={{color:'#666666'}}>/USD</span>
               </td>
               <td className="py-2 px-6 text-left md:text-center" style={{color:'#FFFFFF'}}>{asset.lastTrade}</td>
-              <td className="py-2 px-6 text-right md:text-center">${asset.dayChange.toFixed(2)}</td>
-              <td className="py-2 px-6 text-right md:text-center">{asset.dayChangeAmount.toFixed(2)}%</td>
+              <td className={`py-2 px-6 text-right md:text-center ${asset.assets === "DOGE" ? 'text-[#6DFFDC]' : ''}`}>
+  ${asset.dayChange.toFixed(2)}%
+</td>
+
+              <td className={`py-2 px-6 text-right md:text-center ${asset.assets === "DOGE" ? 'text-[#6DFFDC]' : ''}`}>
+  ${asset.dayChangeAmount.toFixed(2)}
+</td>
               <td className="py-2 px-6 text-right md:text-center">
                 <button
                   className="bg-[#6DFF8B] text-black py-2 px-4 rounded-md hover:bg-[#5FE67E]"
