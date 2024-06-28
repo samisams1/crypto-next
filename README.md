@@ -20,5 +20,5 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-
+```
 Live Demo [https://crypto-next-mkm6.vercel.app](https://crypto-next-mkm6.vercel.app) with your browser to see the result.
