@@ -21,4 +21,4 @@ yarn dev
 # or
 pnpm dev
 
-Live Demo [http://localhost:3000](https://crypto-next-mkm6.vercel.app) with your browser to see the result.
+Live Demo [https://crypto-next-mkm6.vercel.app](https://crypto-next-mkm6.vercel.app) with your browser to see the result.
