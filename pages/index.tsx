@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
-      <main className="bg-[#0D192B] flex items-center justify-center p-5" style={{backgroundColor:'black'}}>
+      <div className="bg-[#0D192B] flex items-center justify-center p-5" style={{backgroundColor:'black'}}>
         <div className="relative w-full h-full">
           <Image
             src={backgroundImage}
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             </div>
           </Layout>
         </div>
-      </main>
+      </div>
     </>
   );
 };

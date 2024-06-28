@@ -7,10 +7,12 @@
   body {
     height: 100%;
     font-size: 18px;
+    background-color: black;
   }
 
   #__next {
     height: 100%;
+    background-color: black;
   }
   p {
     color: #8bacda;
