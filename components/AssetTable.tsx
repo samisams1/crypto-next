@@ -26,16 +26,16 @@ const AssetTable: React.FC<AssetTableProps> = ({ assets }) => {
               key={asset.id}
               className={`${asset.dayChange >= 0 ? 'text-green-500' : 'text-red-500'}`}
             >
-              <td className="py-2 px-6 text-left md:text-center flex items-center gap-2">
+              <td className="py-2 px-6 text-left md:text-center flex items-center gap-2" style={{color:'#FFFFFF'}}>
                 <Image
                   src={`/assets/${asset.image}`}
                   alt="image"
                   width={32}
                   height={32}
                 />
-                {asset.assets}
+                {asset.assets}<span style={{color:'#666666'}}>/USD</span>
               </td>
-              <td className="py-2 px-6 text-left md:text-center">{asset.lastTrade}</td>
+              <td className="py-2 px-6 text-left md:text-center" style={{color:'#FFFFFF'}}>{asset.lastTrade}</td>
               <td className="py-2 px-6 text-right md:text-center">${asset.dayChange.toFixed(2)}</td>
               <td className="py-2 px-6 text-right md:text-center">{asset.dayChangeAmount.toFixed(2)}%</td>
               <td className="py-2 px-6 text-right md:text-center">
