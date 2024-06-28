@@ -21,7 +21,4 @@ yarn dev
 # or
 pnpm dev
 
-
-Live Demo
-You can access the live demo of the Crypto Next App
-[:rocket: Crypto Next App Live Demo](https://crypto-next-mkm6.vercel.app)
+Live Demo [http://localhost:3000](https://crypto-next-mkm6.vercel.app) with your browser to see the result.
