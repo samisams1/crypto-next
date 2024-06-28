@@ -14,7 +14,7 @@ const AssetBottom: React.FC = () => {
         height={28}
       /></span>
       </div>
-      <div className="flex items-center justify-between text-[#FAFAFA] mt-4 space-x-2">
+      <div className="flex items-center justify-between text-[#FAFAFA] mt-4 space-x-2 relative">
   <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
     <div className="flex items-center">
       <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
@@ -33,9 +33,18 @@ const AssetBottom: React.FC = () => {
       <span className="ml-2">BTC &gt;</span>
     </span>
   </div>
- 
+
+  <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
+    <Image
+      src={`/assets/layout/center-img.png`}
+      alt="image"
+      width={38}
+      height={56}
+    />
+  </div>
+
   <div className="bg-[#1E1E1E]  px-4 py-2 flex items-center justify-between w-1/2">
-  <div className="flex items-center">
+    <div className="flex items-center">
       <span className="text-[50px] font-[600] font-['Roboto']">0.00</span>
     </div>
     <span className="text-[#666666] flex items-center bg-black px-3 py-2 rounded-md ml-4" style={{
@@ -59,7 +68,7 @@ const AssetBottom: React.FC = () => {
         </button>
       </div>
       <div className="flex items-center justify-between mt-4">
-        <span style={{ color: '#FAFAFA' }}>1  BTC = 32.4039 ETH <p style={{ color: '#3980FF' }}>Free exchange</p></span>
+        <span style={{ color: '#FAFAFA' }}>1  BTC = 32.4039 ETH <p style={{ color: '#3980FF', fontSize:14}}>Free exchange</p></span>
         <span style={{ color: '#666666' }}>Updates in 4s</span>
       </div>
     </div>
