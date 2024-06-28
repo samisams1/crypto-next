@@ -65,9 +65,9 @@ const AssetBottom: React.FC = () => {
   </div>
 </div>
       <div className="flex justify-center mt-4">
-        <button className="text-[#FFFFFF] bg-[#9945FF] px-6 py-2 rounded-tl-md rounded-br-md border border-[#9945FF] font-medium">
-          SWOP TOKENS
-        </button>
+      <button className="text-[#FFFFFF] bg-[#9945FF] px-6 py-2 rounded-tl-md rounded-br-md border border-[#9945FF] font-medium font-semibold">
+  SWOP TOKENS
+</button>
       </div>
       <div className="flex items-center justify-between mt-4">
         <span style={{ color: '#FAFAFA' }}>1  BTC = 32.4039 ETH <p style={{ color: '#3980FF', fontSize:14}}>Free exchange</p></span>
