@@ -23,4 +23,5 @@ pnpm dev
 
 
 Live Demo
-You can access the live demo of the Crypto Next App at https://crypto-next-mkm6.vercel.app
+You can access the live demo of the Crypto Next App
+ [Crypto Next App Live Demo](https://crypto-next-mkm6.vercel.app)
