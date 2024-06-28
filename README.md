@@ -24,4 +24,4 @@ pnpm dev
 
 Live Demo
 You can access the live demo of the Crypto Next App
-## [:rocket: Crypto Next App Live Demo](https://crypto-next-mkm6.vercel.app)
+[:rocket: Crypto Next App Live Demo](https://crypto-next-mkm6.vercel.app)
