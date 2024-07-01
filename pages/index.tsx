@@ -7,27 +7,12 @@ import Image from 'next/image';
 import backgroundImage from '../assets/easy.jpeg';
 import AssetBottom from '@/components/AssetBootom';
 
-type Asset = {
-  id: number;
-  assets: string;
-  lastTrade: string;
-  dayChange: number;
-  dayChangeAmount: number;
-  image:string;
-};
+
 
 const Home: NextPage = () => {
-  const [assets, setAssets] = useState<Asset[]>([]);
   const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
-    const fetchAssets = async () => {
-      const response = await fetch('/api/assets');
-      const data = await response.json();
-      setAssets(data);
-    };
-    fetchAssets();
-
     // Add event listener to update window width
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -59,8 +44,8 @@ const Home: NextPage = () => {
             className="z-0"
           />
           <Layout >
-            <div className="relative z-10 w-full max-w-[1200px] mx-auto bg-black" style={{ width: `min(1200px, ${windowWidth - 40}px)` }}>
-              <AssetTable assets={assets} />
+            <div>
+              <AssetTable/>
               <AssetBottom />
             </div>
           </Layout>
