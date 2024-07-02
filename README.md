@@ -1,7 +1,7 @@
 # Crypto Next App
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-![Alt text](image-4.png)
+![Alt text](image-5.png)
 ## Technologies Used
 
 - Next.js: A React framework for building server-rendered, static, and dynamic websites and applications.
