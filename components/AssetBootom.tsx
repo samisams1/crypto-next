@@ -39,14 +39,14 @@ const AssetBottom: React.FC = () => {
           </span>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
-          <Image
-            src={`/assets/layout/center-img.png`}
-            alt="image"
-            width={38}
-            height={38}
-          />
-        </div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
+  <Image
+    src={`/assets/layout/center-img.png`}
+    alt="image"
+    width={38}
+    height={38}
+  />
+</div>
 
         <div className="bg-[#1E1E1E] px-4 py-2 flex items-center justify-between w-1/2">
           <div className="flex items-center">

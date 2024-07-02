@@ -51,12 +51,12 @@ const AssetTable: React.FC = () => {
                   className={`sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain ${!asset.image && 'hidden'}`}
                 />
                 <span
-                  className={`${!asset.image && 'ml-0'} sm:hidden md:inline md:mr-2 sm:text-sm sm:ml-2 md:text-base md:mr-4`}
+                  className={`${!asset.image && 'ml-0'} sm:inline md:inline lg:inline ${asset.assets.length > 3 ? 'sm:hidden md:inline lg:inline' : ''}`}
                 >
                   {asset.assets}
                 </span>
                 <span
-                  className={`${!asset.image && 'ml-0'} sm:inline md:hidden lg:inline lg:mr-2 sm:text-sm sm:ml-2 md:text-base`}
+                  className={`${!asset.image && 'ml-0'} sm:hidden md:hidden lg:hidden`}
                 >
                   {asset.assets.slice(0, 3)}
                 </span>
@@ -65,8 +65,7 @@ const AssetTable: React.FC = () => {
                 </span>
               </td>
               <td className="py-2 px-4 text-left sm:py-1 sm:px-1 md:py-2 md:px-4" style={{ color: '#FFFFFF' }}>
-                <span className="sm:hidden md:inline lg:inline">{asset.lastTrade}</span>
-                <span className="hidden sm:inline md:hidden lg:inline">{asset.lastTrade.slice(0, 8)}</span>
+                <span className="sm:inline md:hidden lg:inline">{asset.lastTrade.slice(0, 8)}</span>
               </td>
               <td
                 className={`py-2 px-4 text-right sm:py-1 sm:px-1 sm:text-sm md:py-2 md:px-4 md:text-base ${
